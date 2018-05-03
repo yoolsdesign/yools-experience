@@ -231,11 +231,17 @@ Author URI:   https://yools.be
 	function yools_floating_button() {
 	    ?>
 
-	    <a class="yools-floating-button" href="#">
+	    <div class="yools-floating-button">
 	        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="64" viewBox="0 0 44 64"><desc>  Created with Sketch.</desc><g fill="none"><g fill="#FFF"><path d="M23.8 55L19.3 55C17.9 55 17 55.9 17 57.3L17 61.8C17 63.1 17.9 64 19.3 64L23.8 64C25.1 64 26 63.1 26 61.8L26 57.3C26 55.9 25.1 55 23.8 55Z"/><path d="M22 0C9.8 0 0 9.8 0 22 0 23.3 0 24.5 0.2 25.7 0.5 27.2 2 27.9 3.4 27.7L8.1 26.2C9.3 26 10 24.7 9.8 23.5 9.8 23 9.8 22.5 9.8 22 9.8 15.2 15.2 9.8 22 9.8 28.8 9.8 34.2 15.2 34.2 22 34.2 26.2 31.8 28.2 27.4 31.8 23.2 35.3 18.3 39.2 17.1 46.3 16.9 47.8 18.1 49 19.6 49L24.4 49C25.7 49 26.6 48.3 26.9 47 27.6 44.1 29.8 42.1 33.5 39.4 38.1 35.8 44 31.1 44 22 44 9.8 34.2 0 22 0Z"/></g></g></svg>
 	        <span class="floating-message floating-message-1">Hulp nodig?</span>
 	        <span class="floating-message floating-message-2">Zit je even vast?</span>
-	    </a>
+	        <ul>
+	        	<li><a href="https://support.yools.be/support/" target="_blank">Ga naar onze helpdesk</a></li>
+	        	<li><a href="https://support.yools.be/support/tickets/new" target="_blank">Stel ons je vraag</a></li>
+	        	<li><a href="https://yools.freshdesk.com/support/solutions/folders/5000120221" target="_blank">Veelgestelde vragen</a></li>
+	        	<li><a href="https://www.facebook.com/yoolsbelgium/" target="_blank">Yools op Facebook</a></li>
+	        </ul>
+	    </div> <!-- .yools-floating-button -->
 
 	    <?php
 	}

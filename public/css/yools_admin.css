@@ -1,0 +1,967 @@
+/*
+    *
+    *
+    * CSS RESET
+    *
+    *
+*/
+
+.single-yools_admin html, .single-yools_admin body, .single-yools_admin div, .single-yools_admin span, .single-yools_admin applet, .single-yools_admin object, .single-yools_admin iframe,
+h1, .single-yools_admin h2, .single-yools_admin h3, .single-yools_admin h4, .single-yools_admin h5, .single-yools_admin h6, .single-yools_admin p, .single-yools_admin blockquote, .single-yools_admin pre,
+a, .single-yools_admin abbr, .single-yools_admin acronym, .single-yools_admin address, .single-yools_admin big, .single-yools_admin cite, .single-yools_admin code,
+del, .single-yools_admin dfn, .single-yools_admin em, .single-yools_admin img, .single-yools_admin ins, .single-yools_admin kbd, .single-yools_admin q, .single-yools_admin s, .single-yools_admin samp,
+small, .single-yools_admin strike, .single-yools_admin strong, .single-yools_admin sub, .single-yools_admin sup, .single-yools_admin tt, .single-yools_admin var,
+b, .single-yools_admin u, .single-yools_admin i, .single-yools_admin center,
+dl, .single-yools_admin dt, .single-yools_admin dd, .single-yools_admin ol, .single-yools_admin ul, .single-yools_admin li,
+fieldset, .single-yools_admin form, .single-yools_admin label, .single-yools_admin legend,
+table, .single-yools_admin caption, .single-yools_admin tbody, .single-yools_admin tfoot, .single-yools_admin thead, .single-yools_admin tr, .single-yools_admin th, .single-yools_admin td,
+article, .single-yools_admin aside, .single-yools_admin canvas, .single-yools_admin details, .single-yools_admin embed, .single-yools_admin 
+figure, .single-yools_admin figcaption, .single-yools_admin footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_admin 
+menu, .single-yools_admin nav, .single-yools_admin output, .single-yools_admin ruby, .single-yools_admin section, .single-yools_admin summary,
+time, .single-yools_admin mark, .single-yools_admin audio, .single-yools_admin video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.single-yools_admin article, .single-yools_admin aside, .single-yools_admin details, .single-yools_admin figcaption, .single-yools_admin figure, .single-yools_admin 
+footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_admin menu, .single-yools_admin nav, .single-yools_admin section {
+    display: block;
+}
+.single-yools_admin body {
+    line-height: 1;
+}
+.single-yools_admin ol, .single-yools_admin ul {
+    list-style: none;
+}
+.single-yools_admin blockquote, .single-yools_admin q {
+    quotes: none;
+}
+.single-yools_admin blockquote:before, .single-yools_admin blockquote:after,
+.single-yools_admin q:before, .single-yools_admin q:after {
+    content: '';
+    content: none;
+}
+.single-yools_admin table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    *
+    *
+    * LOAD FONT
+    *
+    *
+*/
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OX-hpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OVuhpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXuhpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUehpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXehpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bf8pkAp6a.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bf8pkAp6a.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bf8pkAp6a.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bf8pkAp6a.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOX-hpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOVuhpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXuhpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUehpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXehpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpKKSTj5PW.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*
+    *
+    *
+    * MAIN STYLING
+    *
+    *
+*/
+
+* {
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+.single-yools_admin * {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.single-yools_admin html, .single-yools_admin {
+	height: auto !important;
+}
+
+.single-yools_admin {
+	background: #4FC3F7;
+    background: -moz-linear-gradient(-45deg, #4fc3f7 0%, #03a9f4 100%);
+    background: -webkit-linear-gradient(-45deg, #4fc3f7 0%,#03a9f4 100%);
+    background: linear-gradient(135deg, #F2994A 0%,#F2C94C 100%);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.single-yools_admin p {
+  font-weight: normal;
+}
+
+/*
+    *
+    *
+    * ADMIN BAR
+    *
+    *
+*/
+
+#wpadminbar {
+	background: #393E42 !important;
+	height: 40px !important;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.20);
+}
+
+#wpadminbar * {
+	font-family: 'Open Sans' !important;
+}
+
+#wpadminbar .quicklinks a {
+	height: 40px !important;
+	padding-top: 2px !important;
+	box-sizing: border-box;
+}
+
+/*
+    *
+    *
+    * SHEET
+    *
+    *
+*/
+
+.single-yools_admin .sheet {
+    margin: 0 auto;
+    position: relative;
+    cursor: auto;
+    width: 1140px;
+    z-index: auto !important;
+}
+
+.single-yools_admin .sheet:before {
+    width: 100%;
+    content: " ";
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.single-yools_admin .sheet:after {
+    clear: both;
+    font: 0/0 serif;
+    display: block;
+    content: " ";
+}
+
+/*
+    *
+    *
+    * ROWS
+    *
+    *
+*/
+
+.single-yools_admin .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.single-yools_admin .col-20 {
+    -webkit-flex-basis: calc( 100% / 5 ) !important;
+    flex-basis: calc( 100% / 5 ) !important;
+}
+
+.single-yools_admin .col-25 {
+    -webkit-flex-basis: calc( 100% / 4 ) !important;
+    flex-basis: calc( 100% / 4 ) !important;
+}
+
+.single-yools_admin .col-33 {
+    -webkit-flex-basis: calc( 100% / 3 ) !important;
+    flex-basis: calc( 100% / 3 ) !important;
+}
+
+.single-yools_admin .col-40 {
+    -webkit-flex-basis: calc( 40% ) !important;
+    flex-basis: calc( 40% ) !important;
+}
+
+.single-yools_admin .col-50 {
+    -webkit-flex-basis: calc( 100% / 2 ) !important;
+    flex-basis: calc( 100% / 2 ) !important;
+}
+
+.single-yools_admin .col-60 {
+    -webkit-flex-basis: calc( 60% ) !important;
+    flex-basis: calc( 60% ) !important;
+}
+
+.single-yools_admin .col-25:not(:last-child), .single-yools_admin .col-50:not(:last-child) {
+    margin-right: 3% !important;
+}
+
+/*
+    *
+    *
+    * LOGIN PAGES
+    *
+    *
+*/
+
+.single-yools_admin header, .single-yools_admin footer {
+	display: none !important;
+}
+
+.single-yools_admin .yools-logo {
+	overflow: hidden;
+	text-align: center;
+  -webkit-animation: slide-in-top 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+  animation: slide-in-top 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
+
+.single-yools_admin .yools-logo a {
+	display: inline-block;
+}
+
+.single-yools_admin .yools-logo svg {
+	display: block;
+	margin: 84px auto 48px auto;
+  max-width: 260px;
+  height: auto;
+}
+
+/* animation slide-in-top */
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.single-yools_admin .login-form-container, .single-yools_admin #password-lost-form, .single-yools_admin #password-reset-form {
+  width: 500px;
+  display: block;
+  margin: 0 auto 48px auto;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+/* animation fade-in */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+	.single-yools_admin .login-form-container, .single-yools_admin #password-lost-form, .single-yools_admin #password-reset-form {
+		width: calc(100vw - 48px);
+	}
+	.single-yools_admin .yools-logo svg {
+		max-height: 100px;
+		margin-top: 48px;
+		margin-bottom: 40px;
+	}
+}
+
+.single-yools_admin .form-info,
+.single-yools_admin .login-info,
+.single-yools_admin .description,
+.single-yools_admin .login-error,
+.single-yools_admin .form-info + p,
+.single-yools_admin .login-info + p,
+.single-yools_admin .login-error + p {
+	color: #fff;
+	text-align: center;
+  margin-bottom: 36px !important;
+  display: block;
+  background-color: rgba(54,54,54,0.1);
+  padding: 36px;
+  line-height: 1.66em;
+  border-top: 8px solid rgba(54,54,54,0.05);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1) !important;
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1) !important;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1) !important;
+  font-size: 16px;
+}
+
+.single-yools_admin .form-info a, .single-yools_admin .login-info a, .single-yools_admin .description a, .single-yools_admin .login-error a {
+	color: rgba(54,54,54,0.7);
+}
+
+.single-yools_admin .description {
+	margin-top: 10px;
+}
+
+.single-yools_admin label {
+	color: #fff;
+	-webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  display: block;
+  line-height: 1.75em;
+}
+
+.single-yools_admin input[type=text], .single-yools_admin input[type=password] {
+	-webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none !important;
+  border: 1px solid #efeded !important;
+  border: 1px solid transparent !important;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px !important;
+  padding: 12px 10px !important;
+  background: rgba(255, 255, 255, 0.28) !important;
+  color: #fff !important;
+  font-weight: normal;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.single-yools_admin .login-remember {
+  margin: 10px 0 0 0;
+  font-size: 14.4px;
+}
+
+.single-yools_admin .login-remember label {
+  font-size: 14.4px;
+  line-height: 28px;
+}
+
+.single-yools_admin .login-remember input[type=checkbox] {
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+}
+
+.single-yools_admin input[type=submit] {
+    background-color: #00a99d;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding: 24px 28px;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: auto;
+    line-height: 0;
+    color: #fff !important;
+    text-decoration: none;
+    display: block;
+    margin-top: 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    outline: none !important;
+    position: relative;
+    z-index: 2;
+ }
+
+ .single-yools_admin input[type=submit]:hover {
+    background-color: #00988d;
+ }
+
+.single-yools_admin input::-webkit-input-placeholder {
+    color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+    font-weight: normal;
+ }
+
+.single-yools_admin input[type=text]:focus, .single-yools_admin input[type=password]:focus {
+    outline: none !important;
+    background-color: rgba(54,54,54,0.1) !important;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1) !important;
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1) !important;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1) !important;
+}
+
+.single-yools_admin .forgot-password {
+	color: #fff;
+	display: inline-block;
+	margin-top: 12px;
+	-webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+}
+
+.single-yools_admin .resetpass-submit {
+    margin-top: -18px;
+}
+
+/*
+    *
+    *
+    * LOGIN PAGES (OLD WEBSITES)
+    *
+    *
+*/
+
+.single-yools_admin #yls-main {
+  background: none !important;
+}
+
+.single-yools_admin .yls-sheet {
+  width: 100% !important;
+}
+
+/*
+    *
+    *
+    * UNSLIDER
+    *
+    *
+*/
+
+.yools-dashboard .unslider {
+	position: relative;
+}
+
+.yools-dashboard .unslider li, .yools-dashboard .unslider ol, .yools-dashboard .unslider ul {
+  	height: 100%;
+}
+
+.yools-dashboard .unslider li {
+  	position: relative;
+  	overflow: hidden;
+}
+
+.yools-dashboard .unslider li img {
+	top: auto;
+	left: auto;
+	-webkit-transform: none;
+	-moz-transform: none;
+	transform: none;
+}
+
+.yools-dashboard .unslider .unslider-arrow {
+  	position: absolute;
+  	top: 50%;
+  	-webkit-transform: translate(0, -50%);
+  	-moz-transform: translate(0, -50%);
+  	transform: translate(0, -50%);
+}
+
+.yools-dashboard .unslider .prev {
+  left: 0;
+}
+
+.yools-dashboard .unslider .next {
+  right: 0;
+}
+
+.yools-dashboard .unslider .prev, .yools-dashboard .unslider .next {
+  	text-indent: -9999px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.yools-dashboard .unslider .prev:before, .yools-dashboard .unslider .next:before {
+  	content: '';
+  	display: inline-block;
+  	width: 1em;
+  	height: 1em;
+  	border-width: 0.25em;
+  	border-style: solid;
+  	border-color: #fff;
+  	border-left: 0;
+  	border-bottom: 0;
+  	position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.yools-dashboard .unslider .prev:before {
+  	-webkit-transform: translate(-36%, -50%) rotate(-135deg);
+  	-moz-transform: translate(-36%, -50%) rotate(-135deg);
+  	transform: translate(-36%, -50%) rotate(-135deg);
+}
+
+.yools-dashboard .unslider .next:before {
+  	-webkit-transform: translate(-64%, -50%) rotate(45deg);
+  	-moz-transform: translate(-64%, -50%) rotate(45deg);
+  	transform: translate(-64%, -50%) rotate(45deg);
+}
+
+/*
+    *
+    *
+    * YOOLS DASHBOARD
+    *
+    *
+*/
+
+.yools-dashboard {
+    background: #fff;
+}
+
+.yools-dashboard .dashboard-group {
+  margin-bottom: 60px;
+}
+
+.yools-dashboard .dashboard-group h2 {
+  font-size: 26px;
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  display: block;
+  color: #53514e;
+  letter-spacing: 0;
+  padding: 20px 0 22px 0;
+  border-top: #EFEFEF 1px solid;
+  text-transform: none !important;
+}
+
+.yools-dashboard .dashboard-group .unslider {
+  width: 100%;
+}
+
+.yools-dashboard .dashboard-group li {
+  padding: 0 60px;
+}
+
+.yools-dashboard .dashboard-group li .col-25 {
+  height: 350px;
+}
+
+.yools-dashboard .dashboard-group li .col-25 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.yools-dashboard .unslider-arrow:before {
+  border-color: #6F6F6F !important;
+}
+
+.yools-dashboard .button {
+  background-color: #00a99d;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  padding: 24px 28px;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: auto;
+  line-height: 0;
+  color: #fff !important;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none !important;
+}
+
+.yools-dashboard .not-logged-in {
+  width: 100%;
+  text-align: center;
+}
+
+.yools-dashboard .dashboard-group-card {
+	position: relative;
+	background-color: #FFBE23;
+	overflow: hidden;
+}
+
+.yools-dashboard .dashboard-group-card .dashboard-group-card-icon {
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+.yools-dashboard .dashboard-group-card .dashboard-group-card-icon img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.yools-dashboard .dashboard-group-card .dashboard-group-card-text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background-color: #00A99D;
+	width: 100%;
+	height: 50%;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.yools-dashboard .dashboard-group-card .dashboard-group-card-text:before {
+	content: '';
+	position: absolute;
+	top: -29%;
+	left: 0;
+	z-index: 1;
+	width: 120%;
+	height: 50%;
+	background-color: #00A99D;
+	border-top: 10px solid rgba(0,0,0,0.07);
+	transform: rotate(-20deg);
+}
+
+.yools-dashboard .dashboard-group-card .dashboard-group-card-text:after {
+	content: '';
+	position: absolute;
+	right: 24px;
+	bottom: -60px;
+	width: 30px;
+	height: 30px;
+	background-image: url('/wp-content/plugins/yools-experience/public/images/cards/right-arrow.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+	webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+.yools-dashboard .dashboard-group-card .dashboard-group-card-text span {
+	position: absolute;
+	top: 10%;
+	right: 24px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 1.25em;
+	text-align: right;
+	max-width: calc( 100% - 48px );
+	z-index: 2;
+	webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.yools-dashboard .dashboard-group-card:hover .dashboard-group-card-icon img, .yools-dashboard .dashboard-group-card:hover .dashboard-group-card-icon .post-count {
+	transform: translate(-50%, -50%) scale(1.1) ;
+}
+
+.yools-dashboard .dashboard-group-card:hover .dashboard-group-card-text {
+	top: 0;
+	height: 100%;
+}
+
+.yools-dashboard .dashboard-group-card:hover .dashboard-group-card-text:after {
+	bottom: 24px;
+}
+
+.yools-dashboard .dashboard-group-card:hover .dashboard-group-card-text span {
+	top: 140px;
+}
+
+.yools-dashboard .dashboard-group-posts .dashboard-group-card-icon .post-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.yools-dashboard .dashboard-group-posts .dashboard-group-card-icon .post-count span {
+  color: #FFBE23;
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.yools-dashboard .dashboard-group-extra {
+	display: none;
+}
+
+/*
+    *
+    *
+    * RESPONSIVE
+    *
+    *
+*/
+
+@media screen and (max-width: 960px) {
+
+  .single-yools_admin .sheet {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .yools-dashboard .unslider .row {
+    display: block;
+  }
+
+  .yools-dashboard .unslider .dashboard-group-card.col-25 {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100px;
+  }
+
+  .yools-dashboard .unslider .dashboard-group-card .dashboard-group-card-icon {
+    display: none;
+  }
+
+  .yools-dashboard .unslider .dashboard-group-card .dashboard-group-card-text {
+    height: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .yools-dashboard .unslider .dashboard-group-card .dashboard-group-card-text:before {
+    display: none;
+  }
+
+  .yools-dashboard .unslider .dashboard-group-card .dashboard-group-card-text span {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+  }
+
+}

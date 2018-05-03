@@ -3,7 +3,7 @@
 Plugin Name:  Yools Experience
 Plugin URI:   https://yools.be
 Description:  Yools Experience Plugin
-Version:      1.0
+Version:      0.1.1
 Author:       Yools
 Author URI:   https://yools.be
 */

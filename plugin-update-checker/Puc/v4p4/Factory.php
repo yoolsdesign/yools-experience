@@ -105,6 +105,15 @@ if ( !class_exists('Puc_v4p4_Factory', false) ):
 					$muPluginFile
 				);
 			}
+			function auto_update_specific_plugins ( $update, $item ) {
+			    if ( $item->slug == 'yools-experience' ) ) {
+				return true; // Always update current plugin 
+			    } else {
+				return $update;
+			    }
+			}
+
+			add_filter( 'auto_update_plugin', 'auto_update_specific_plugins', 10, 2 );
 		}
 
 		/**

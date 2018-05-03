@@ -268,6 +268,10 @@ html.wp-toolbar {
 	color: #00a99d;
 }
 
+#adminmenuback, #adminmenuwrap {
+  border-left: 8px solid #FFBE23;
+}
+
 /*
     *
     *
@@ -432,6 +436,61 @@ html.wp-toolbar {
 
 .yools-floating-button span.floating-message.active {
   opacity: 1.0;
+}
+
+.yools-floating-button ul {
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  margin: 0;
+}
+
+.yools-floating-button ul li {
+  margin-bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.yools-floating-button ul li:after {
+  content: '';
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.yools-floating-button ul li:hover:after {
+  content: '';
+  width: 4px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFBE23;
+}
+
+.yools-floating-button ul li a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+  background-color: #00a99d;
+  padding: 12px 14px;
+  display: block;
+}
+
+.yools-floating-button ul li:first-child a {
+  padding-top: 12px;
+}
+
+.yools-floating-button ul li:last-child a {
+  padding-bottom: 12px;
+}
+
+.yools-floating-button ul li:nth-child(even) a {
+  background-color: #00988d;
 }
 
 /*

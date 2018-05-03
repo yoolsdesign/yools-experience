@@ -3,17 +3,10 @@
 Plugin Name:  Yools Experience
 Plugin URI:   https://yools.be
 Description:  Yools Experience Plugin
-Version:      0.1.1
+Version:      0.2
 Author:       Yools
 Author URI:   https://yools.be
 */
-
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/yoolsdesign/yoolsexperiencewp',
-	__FILE__,
-	'yools-experience'
-);
 
 /**
    * Enqueue scripts & style
@@ -932,6 +925,13 @@ class Yools_Experience_Plugin {
 	}
 
 }
+
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/yoolsdesign/yools-experience',
+	__FILE__,
+	'yools-experience'
+);
  
 // Initialize the plugin
 $yools_experience_plugin = new Yools_Experience_Plugin();

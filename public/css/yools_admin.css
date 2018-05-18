@@ -719,6 +719,7 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
 
 .yools-dashboard .unslider {
 	position: relative;
+  border-radius: 0;
 }
 
 .yools-dashboard .unslider li, .yools-dashboard .unslider ol, .yools-dashboard .unslider ul {

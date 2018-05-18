@@ -6,19 +6,87 @@
     *
 */
 
-.single-yools_admin html, .single-yools_admin body, .single-yools_admin div, .single-yools_admin span, .single-yools_admin applet, .single-yools_admin object, .single-yools_admin iframe,
-h1, .single-yools_admin h2, .single-yools_admin h3, .single-yools_admin h4, .single-yools_admin h5, .single-yools_admin h6, .single-yools_admin p, .single-yools_admin blockquote, .single-yools_admin pre,
-a, .single-yools_admin abbr, .single-yools_admin acronym, .single-yools_admin address, .single-yools_admin big, .single-yools_admin cite, .single-yools_admin code,
-del, .single-yools_admin dfn, .single-yools_admin em, .single-yools_admin img, .single-yools_admin ins, .single-yools_admin kbd, .single-yools_admin q, .single-yools_admin s, .single-yools_admin samp,
-small, .single-yools_admin strike, .single-yools_admin strong, .single-yools_admin sub, .single-yools_admin sup, .single-yools_admin tt, .single-yools_admin var,
-b, .single-yools_admin u, .single-yools_admin i, .single-yools_admin center,
-dl, .single-yools_admin dt, .single-yools_admin dd, .single-yools_admin ol, .single-yools_admin ul, .single-yools_admin li,
-fieldset, .single-yools_admin form, .single-yools_admin label, .single-yools_admin legend,
-table, .single-yools_admin caption, .single-yools_admin tbody, .single-yools_admin tfoot, .single-yools_admin thead, .single-yools_admin tr, .single-yools_admin th, .single-yools_admin td,
-article, .single-yools_admin aside, .single-yools_admin canvas, .single-yools_admin details, .single-yools_admin embed, .single-yools_admin 
-figure, .single-yools_admin figcaption, .single-yools_admin footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_admin 
-menu, .single-yools_admin nav, .single-yools_admin output, .single-yools_admin ruby, .single-yools_admin section, .single-yools_admin summary,
-time, .single-yools_admin mark, .single-yools_admin audio, .single-yools_admin video {
+.single-yools_admin html,
+.single-yools_admin body,
+.single-yools_admin div,
+.single-yools_admin span,
+.single-yools_admin applet,
+.single-yools_admin object,
+.single-yools_admin iframe,
+.single-yools_admin h1,
+.single-yools_admin h2,
+.single-yools_admin h3,
+.single-yools_admin h4,
+.single-yools_admin h5,
+.single-yools_admin h6,
+.single-yools_admin p,
+.single-yools_admin blockquote,
+.single-yools_admin pre,
+.single-yools_admin a,
+.single-yools_admin abbr,
+.single-yools_admin acronym,
+.single-yools_admin address,
+.single-yools_admin big,
+.single-yools_admin cite,
+.single-yools_admin code,
+.single-yools_admin del,
+.single-yools_admin dfn,
+.single-yools_admin em,
+.single-yools_admin img,
+.single-yools_admin ins,
+.single-yools_admin kbd,
+.single-yools_admin q,
+.single-yools_admin s,
+.single-yools_admin samp,
+.single-yools_admin small,
+.single-yools_admin strike,
+.single-yools_admin strong,
+.single-yools_admin sub,
+.single-yools_admin sup,
+.single-yools_admin tt,
+.single-yools_admin var,
+.single-yools_admin b,
+.single-yools_admin u,
+.single-yools_admin i,
+.single-yools_admin center,
+.single-yools_admin dl,
+.single-yools_admin dt,
+.single-yools_admin dd,
+.single-yools_admin ol,
+.single-yools_admin ul,
+.single-yools_admin li,
+.single-yools_admin fieldset,
+.single-yools_admin form,
+.single-yools_admin label,
+.single-yools_admin legend,
+.single-yools_admin table,
+.single-yools_admin caption,
+.single-yools_admin tbody,
+.single-yools_admin tfoot,
+.single-yools_admin thead,
+.single-yools_admin tr,
+.single-yools_admin th,
+.single-yools_admin td,
+.single-yools_admin article,
+.single-yools_admin aside,
+.single-yools_admin canvas,
+.single-yools_admin details,
+.single-yools_admin embed,
+.single-yools_admin figure,
+.single-yools_admin figcaption,
+.single-yools_admin footer,
+.single-yools_admin header,
+.single-yools_admin hgroup,
+.single-yools_admin menu,
+.single-yools_admin nav,
+.single-yools_admin output,
+.single-yools_admin ruby,
+.single-yools_admin section,
+.single-yools_admin summary,
+.single-yools_admin time,
+.single-yools_admin mark,
+.single-yools_admin audio,
+.single-yools_admin video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -31,7 +99,7 @@ time, .single-yools_admin mark, .single-yools_admin audio, .single-yools_admin v
 footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_admin menu, .single-yools_admin nav, .single-yools_admin section {
     display: block;
 }
-.single-yools_admin body {
+.single-yools_admin {
     line-height: 1;
 }
 .single-yools_admin ol, .single-yools_admin ul {
@@ -48,6 +116,11 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
 .single-yools_admin table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+.single-yools_admin, .single-yools_admin * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
@@ -283,6 +356,8 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
 #wpadminbar .quicklinks a {
 	height: 40px !important;
 	padding-top: 2px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -557,7 +632,7 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
     color: #fff !important;
     text-decoration: none;
     display: block;
-    margin-top: 16px;
+    margin: 16px 0 0 0 !important;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -615,6 +690,23 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
 
 .single-yools_admin .yls-sheet {
   width: 100% !important;
+  background: transparent;
+}
+
+.single-yools_admin #yls-main .yls-header,
+.single-yools_admin #yls-header-bg,
+.single-yools_admin #yls-hmenu-bg {
+  display: none !important;
+}
+
+.single-yools_admin .yls-layout-cell,
+.single-yools_admin .yls-content-layout-row,
+.single-yools_admin .yls-content-layout-row,
+.single-yools_admin .yls-content-layout,
+.single-yools_admin .yls-layout-wrapper {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 /*

@@ -196,6 +196,10 @@ html.wp-toolbar {
   display: none;
 }
 
+.update-nag {
+  display: none;
+}
+
 /*
     *
     *
@@ -269,7 +273,7 @@ html.wp-toolbar {
 }
 
 #adminmenuback, #adminmenuwrap {
-  border-left: 8px solid #FFBE23;
+  border-left: 4px solid #FFBE23;
 }
 
 /*
@@ -365,6 +369,7 @@ html.wp-toolbar {
   border-radius: 50%;
   z-index: 9999;
   box-shadow: 1px 2px 44px 0 rgba(0,0,0,0.10);
+  cursor: pointer;
 }
 
 .yools-floating-button svg {
@@ -443,6 +448,7 @@ html.wp-toolbar {
   bottom: 100%;
   right: 100%;
   margin: 0;
+  display: none;
 }
 
 .yools-floating-button ul li {

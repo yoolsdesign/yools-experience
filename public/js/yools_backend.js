@@ -21,4 +21,10 @@ jQuery(document).ready(function( $ ) {
 	  $('.yools-floating-button .floating-message-2').addClass("active");
 	}, 300250);
 
+	$(".yools-floating-button ul").hide();
+
+	$(".yools-floating-button").click(function(){
+	    $(".yools-floating-button ul").toggle();
+	});
+
 });

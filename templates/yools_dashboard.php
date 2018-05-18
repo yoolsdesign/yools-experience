@@ -129,7 +129,7 @@
 					<?php if( is_plugin_active('accordions/accordions.php') ): ?>
 					<a class="dashboard-group-card col-25" href="/wp-admin/edit.php?post_type=accordions">
 						<div class="dashboard-group-card-icon">
-							<img src="<?php echo plugin_dir_url( __DIR__ ) . 'public/images/cards/'; ?>">
+							<img src="<?php echo plugin_dir_url( __DIR__ ) . 'public/images/cards/accordions.svg'; ?>">
 						</div> <!-- .dashboard-group-card-icon -->
 						<div class="dashboard-group-card-text">
 							<span>Accordions bewerken</span>

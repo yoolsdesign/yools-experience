@@ -13,6 +13,8 @@
 
 get_header(); ?>
 
+<div class="yools-admin">
+
 <div class="yools-logo">
 <a href="
 <?php if( !is_single('user-account') ): ?>
@@ -81,6 +83,8 @@ get_header(); ?>
 </div> <!-- .yools-logo -->
     
 <?php the_content(); ?>
+
+</div> <!-- .yools-admin -->
 
 <?php
 get_sidebar();

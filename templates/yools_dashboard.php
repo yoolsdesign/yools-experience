@@ -179,7 +179,8 @@
 			'displayed_gallery',
 			'display_type',
 			'gal_display_source',
-			'acf'
+			'acf',
+			'user_request'
 		);
 
 		$yools_count_post_types = 0;

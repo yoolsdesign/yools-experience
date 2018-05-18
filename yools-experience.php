@@ -349,6 +349,7 @@ class Yools_Experience_Plugin {
 	          wp_insert_post( $args );
 	        }
 	    }
+	    flush_rewrite_rules();
 	}
 
 	/**

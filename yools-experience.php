@@ -82,6 +82,7 @@ Author URI:   https://yools.be
 			'capability_type'       => 'page',
 		);
 		register_post_type( 'yools_admin', $args );
+		flush_rewrite_rules();
 	}
 	add_action( 'init', 'yools_admin', 0);
 
@@ -349,7 +350,6 @@ class Yools_Experience_Plugin {
 	          wp_insert_post( $args );
 	        }
 	    }
-	    flush_rewrite_rules();
 	}
 
 	/**

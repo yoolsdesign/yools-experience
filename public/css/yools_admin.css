@@ -972,6 +972,8 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
 	color: #fff;
 	font-weight: bold;
 	line-height: 1.25em;
+	text-transform: none;
+    	letter-spacing: 0;
 	text-align: right;
 	max-width: calc( 100% - 48px );
 	z-index: 2;

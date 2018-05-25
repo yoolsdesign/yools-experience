@@ -102,6 +102,18 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
 .single-yools_admin {
     line-height: 1;
 }
+.single-yools_admin #page > a,
+.single-yools_admin #page > span,
+.single-yools_admin #page > p,
+.single-yools_admin #page > h1,
+.single-yools_admin #page > h2,
+.single-yools_admin #page > h3,
+.single-yools_admin #page > h4,
+.single-yools_admin #page > h5,
+.single-yools_admin #page > h6,
+.single-yools_admin #page > div:not(#content) {
+    display: none;
+}
 .single-yools_admin ol, .single-yools_admin ul {
     list-style: none;
 }

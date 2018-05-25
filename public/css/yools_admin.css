@@ -829,6 +829,10 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
   text-transform: none !important;
 }
 
+.yools-dashboard .dashboard-group h2:before, .yools-dashboard .dashboard-group h2:after {
+  display: none;	
+}
+
 .yools-dashboard .dashboard-group .unslider {
   width: 100%;
 }

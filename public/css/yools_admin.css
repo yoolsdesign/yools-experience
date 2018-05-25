@@ -329,7 +329,7 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
     font-family: 'Open Sans', sans-serif !important;
 }
 
-.single-yools_admin #content {
+.single-yools_admin #page, .single-yools_admin #content {
   margin: 0 !important;
 }
 

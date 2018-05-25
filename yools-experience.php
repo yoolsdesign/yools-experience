@@ -8,7 +8,7 @@ Plugin URI:   https://yools.be
 
 Description:  Yools Experience Plugin
 
-Version:      0.3.5
+Version:      0.3.6
 
 Author:       Yools
 

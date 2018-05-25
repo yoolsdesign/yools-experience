@@ -93,9 +93,7 @@
 <?php if(
 	is_plugin_active('slideshow-jquery-image-gallery/slideshow.php')
 	||
-	is_plugin_active('nextgen-gallery/nggallery.php')
-	||
-	is_plugin_active('accordions/accordions.php') ):
+	is_plugin_active('nextgen-gallery/nggallery.php') ):
 ?>
 <div class="dashboard-group dashboard-group-plugins">
 	<h2>Plugins</h2>
@@ -122,17 +120,6 @@
 						</div> <!-- .dashboard-group-card-icon -->
 						<div class="dashboard-group-card-text">
 							<span>Gallerijen bewerken</span>
-						</div> <!-- .dashboard-group-card-text -->
-					</a> <!-- .col-25 -->
-					<?php endif; ?>
-
-					<?php if( is_plugin_active('accordions/accordions.php') ): ?>
-					<a class="dashboard-group-card col-25" href="/wp-admin/edit.php?post_type=accordions">
-						<div class="dashboard-group-card-icon">
-							<img src="<?php echo plugin_dir_url( __DIR__ ) . 'public/images/cards/accordions.svg'; ?>">
-						</div> <!-- .dashboard-group-card-icon -->
-						<div class="dashboard-group-card-text">
-							<span>Accordions bewerken</span>
 						</div> <!-- .dashboard-group-card-text -->
 					</a> <!-- .col-25 -->
 					<?php endif; ?>

@@ -167,7 +167,8 @@
 			'display_type',
 			'gal_display_source',
 			'acf',
-			'user_request'
+			'user_request',
+			'mc4wp-form'
 		);
 
 		$yools_count_post_types = 0;

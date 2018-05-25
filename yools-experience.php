@@ -483,7 +483,7 @@ Author URI:   https://yools.be
 
 	        <ul>
 
-	        	<li><a href="https://support.yools.be/support/" target="_blank">Ga naar onze helpdesk</a></li>
+	        	<li><a href="https://support.yools.be/support/home" target="_blank">Ga naar onze helpdesk</a></li>
 
 	        	<li><a href="https://support.yools.be/support/tickets/new" target="_blank">Stel ons je vraag</a></li>
 

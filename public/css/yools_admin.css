@@ -100,7 +100,8 @@ footer, .single-yools_admin header, .single-yools_admin hgroup, .single-yools_ad
     display: block;
 }
 .single-yools_admin {
-    line-height: 1;
+	line-height: 1;
+	margin: 0;
 }
 .single-yools_admin #page > a,
 .single-yools_admin #page > span,
